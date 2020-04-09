@@ -72,7 +72,7 @@
                         </div>
 
                         <div class="form-group row">
-                            <label for="contract_date" class="col-md-4 col-form-label text-md-right">{{ __('Contract Date') }} {{ __('(Format dd.mm.YYYY))') }}</label>
+                            <label for="contract_date" class="col-md-4 col-form-label text-md-right">{{ __('Contract Date') }}</label>
 
                             <div class="col-md-6">
                                 <input id="contract_date" type="date" class="form-control @error('contract_date') is-invalid @enderror" name="contract_date" value="{{ old('contract_date') ?? isset($employee) ? $employee->contract_date->toDateString() : '' }}" required>
@@ -86,7 +86,7 @@
                         </div>
 
                         <div class="form-group row">
-                            <label for="contract_expiration_date" class="col-md-4 col-form-label text-md-right">{{ __('Contract Expiration Date') }} {{ __('(Format dd.mm.YYYY))') }}</label>
+                            <label for="contract_expiration_date" class="col-md-4 col-form-label text-md-right">{{ __('Contract Expiration Date') }}</label>
 
                             <div class="col-md-6">
                                 <input id="contract_expiration_date" type="date" class="form-control @error('contract_expiration_date') is-invalid @enderror" name="contract_expiration_date" value="{{ old('contract_expiration_date') ?? isset($employee) ? $employee->contract_expiration_date->toDateString() : '' }}" required>
