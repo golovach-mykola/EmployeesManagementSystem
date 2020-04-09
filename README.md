@@ -15,3 +15,4 @@ Administrators will create employees and assign them to managers.
 3) Database settings in .env
 4) Run php artisan migrate --seed
 5) Run php artisan storage:link
+6) Run php artisan key:generate
